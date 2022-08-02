@@ -1,0 +1,171 @@
+#title {
+  height: 100%;
+  background-color: #eee;
+  min-height: 480px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+#title::before{
+  content: "";
+  display: block;
+  position: absolute;
+  width: 75%;
+  height: 100%;
+  background-color: #111111;
+}
+#title .inner {
+  width: 80%;
+  position: relative;
+  z-index: 1;
+  color: white;
+  height: 673px;
+}
+
+#title .inner h2{
+  position: relative;
+  z-index: 1;
+  font-size: 55px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+#title .inner h2 span{
+  display: block;
+  animation-name: h2up;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-direction: reverse;
+  animation-timing-function: ease-out;
+}
+@keyframes h2up{
+  0%{
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100%{
+    transform: translateY(100%);
+    opacity: 0.4;
+  }
+}
+#title .inner p{
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+
+}
+#title .inner p span{
+  display: block;
+  animation-name: pup;
+  animation-duration: 1.3s;
+  animation-fill-mode: forwards;
+  animation-direction: reverse;
+  animation-timing-function: ease-out;
+}
+@keyframes pup{
+  0%{
+    transform: translateY(0);
+    opacity: 1;
+  }
+  50%{
+    transform: translateY(100%);    
+  }
+  100%{
+    transform: translateY(100%);
+    opacity: 0;
+  }
+}
+#title .inner br{
+  
+}
+#title .inner iframe{
+  width: 1188px;
+  height: 673px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+#title span.titleaside{
+  position: absolute;
+  right: calc(20% / 4 - 82px);
+  bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 500px;
+  justify-content: space-between;
+  width: 175px;
+}
+#title span.titleaside a.campaign{
+  color: #979797;
+  transform: rotate(90deg) translateX(80px);
+  font-weight: bold;
+}
+#title span.titleaside a.scroll{
+  position: relative;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+}
+#title span.titleaside a.scroll::before{
+  content: "";
+  width: 8px;
+  height: 8px;
+  display: block;
+  position: absolute;
+  top: -10px;
+  border: 2px solid;
+  border-left: transparent;
+  border-top: transparent;
+  transform: scale(1.2) translateY(-10px) rotate(45deg);
+  color: #333;
+  animation-name: scrollani1;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes scrollani1{
+  0%{
+    opacity: 0;
+  }
+  10%{
+    opacity: 0;
+  }
+  20%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+#title span.titleaside a.scroll::after{
+  content: "";
+  width: 8px;
+  height: 8px;
+  display: block;
+  position: absolute;
+  top: -20px;
+  border: 2px solid;
+  border-left: transparent;
+  border-top: transparent;
+  transform: scale(1.2) translateY(-10px) rotate(45deg);
+  color: #777;
+/*   left: calc(50%-7.5px); */
+  animation-name: scrollani2;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes scrollani2{
+  0%{
+    opacity: 0;
+  }
+  10%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+

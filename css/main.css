@@ -1,0 +1,162 @@
+#service {
+
+}
+#service .inner {
+  position: relative;
+  padding-bottom: 500px;
+}
+#service .inner hgroup {
+
+}
+#service .inner hgroup h2 {
+  text-align: center;
+}
+#service .inner hgroup h3 {
+  line-height: 2;
+}
+#service .inner .contents {
+  flex-wrap: wrap;
+  row-gap: 150px;
+  margin-top: 60px;
+  column-gap: 50px;
+}
+#service .inner .contents article {
+  width: calc(100%/3 - 100px/3);
+  /*! flex-basis: 30%; */
+}
+#service .inner .contents article:nth-child(3n+1){
+  transform: translateY(25%);
+}
+#service .inner .contents article:nth-child(3n+2){
+  transform: translateY(50%);
+}
+#service .inner .contents article a {
+
+}
+#service .inner .contents article a::before {
+  content: "";
+  width: 100%;
+  display: block;
+  height: 595px;
+  background-position: center;
+  background-size: cover;
+  transition: all 0.3s;
+  box-sizing: border-box;
+  background-origin: border-box;
+  border: 0px solid #636a52e6;
+}
+#service .inner .contents article a:hover::before{
+  border: 50px solid #636a52e6;
+}
+#service .inner .contents article:nth-child(1) a::before{
+  background-image: url(../img/main-service-01.jpg);
+}
+#service .inner .contents article:nth-child(2) a::before{
+  background-image: url(../img/main-service-02.jpg);
+}
+#service .inner .contents article:nth-child(3) a::before{
+  background-image: url(../img/main-service-03.jpg);
+}
+#service .inner .contents article:nth-child(4) a::before{
+  background-image: url(../img/main-service-04.jpg);
+}
+#service .inner .contents article:nth-child(5) a::before{
+  background-image: url(../img/main-service-05.jpg);
+}
+#service .inner .contents article:nth-child(6) a::before{
+  background-image: url(../img/main-service-06.jpg);
+}
+#service .inner .contents article a h4 {
+
+  line-height: 1.5;
+  margin: 10px 0;
+}
+#service .inner .contents article a p {
+
+}
+#service .inner .contents article a p:nth-child(n+1){
+  color: #666;
+}
+#service .inner .contents a.more {
+  position: absolute;
+  bottom: 20px;
+  left: calc(50% - 100px);
+/*   width: 100px; */
+  text-align: center;
+  font-weight: bold;
+  padding-right: 60px;
+}
+#service .inner .contents a.more::before{
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: #333;
+  position: absolute;
+  right: 0;
+  top: calc(50% - 1px);
+}
+#service .inner .contents a.more::after{
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  border: 4px solid #333;
+  transform: rotate(45deg);
+  border-left: transparent;
+  border-bottom: transparent;
+  position: absolute;
+  right: 0;
+  top: calc(50% - 6px);
+}
+
+/*space*/
+#space{
+  position: relative;
+  padding: 280px 0 100px;
+}
+#space .inner{
+  height: 560px;
+  margin-left: 0;
+  /*! width: 90%; */
+  padding-left: 10%;
+  background-image: url(../img/main-space-01.jpg);
+  background-repeat: no-repeat;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+#space .inner h2{
+  font-size: 197px;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  letter-spacing: -6px;
+  top: 0;
+  /*글자채우는방법*/
+  /*! width: 130%; */
+  /*! transform: translateX(-181px); */
+  margin-top: 50px;
+}
+#space .inner>*:not(h2){
+  color: white;
+}
+#space .inner p{
+  line-height: 1.1;
+  margin-bottom: 20px;
+  margin-top: 80px;
+  letter-spacing: -1px;
+  word-spacing: 8px;
+  /*! margin-left: 100px; */
+}
+#space .inner a.more{
+  position: relative;
+  text-transform: uppercase;
+}
+/* #space .inner a.more::after{
+  
+}
+#space .inner a.more::before{
+  
+}
+ */
